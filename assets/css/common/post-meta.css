@@ -1,0 +1,24 @@
+.entry-meta {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.link-tag {
+    background: var(--primary);
+    color: var(--theme);
+    box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.37);
+    border-radius: 7px;
+
+    padding: 6px 10px;
+    margin-left: 10px;
+
+    /* This prevents the link tags from being shadowed by the entry link */
+    position: relative;
+}
+
+.link-tag svg {
+    height: 12px;
+    margin-right: 4px;
+}

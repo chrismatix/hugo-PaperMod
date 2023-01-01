@@ -41,6 +41,9 @@
     border-radius: var(--radius);
     transition: transform 0.1s;
     border: 1px solid var(--border);
+
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.0906026);
+    border-radius: 16px;
 }
 
 .post-entry:active {
@@ -57,7 +60,7 @@
 }
 
 .entry-content {
-    margin: 8px 0;
+    margin: 24px 0;
     color: var(--secondary);
     font-size: 14px;
     line-height: 1.6;
@@ -70,6 +73,8 @@
 .entry-footer {
     color: var(--secondary);
     font-size: 13px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .entry-link {
@@ -101,4 +106,10 @@
 .entry-cover a {
     color: var(--secondary);
     box-shadow: 0 1px 0 var(--primary);
+}
+
+.entry-divider {
+    margin-top: 24px;
+    border: 1px solid #EDEDED;
+    margin-bottom: 24px;
 }

@@ -89,6 +89,9 @@
 {{- end }}
 {{- end -}}
 
+{{- $customjs := resources.Get "js/custom.js" }}
+<script defer crossorigin="anonymous" src="{{ $customjs.RelPermalink }}"></script>
+
 {{- /* Highlight.js */}}
 {{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default .Params.disableHLJS ) }}
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isHLJSdisabled)) }}
