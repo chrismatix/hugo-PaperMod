@@ -62,6 +62,10 @@
     margin-inline-end: 8px;
 }
 
+.logo path {
+    fill: var(--primary);
+}
+
 button#theme-toggle {
     font-size: 26px;
     margin: auto 4px;
